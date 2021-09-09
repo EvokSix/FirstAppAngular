@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Lista } from './lista';
 
 @Component({
-  selector: 'app-lista',
   templateUrl: './lista.component.html'
 })
 
