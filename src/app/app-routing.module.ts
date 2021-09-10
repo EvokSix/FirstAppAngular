@@ -1,3 +1,4 @@
+import { ListaInfoComponent } from './aprendizado/lista-info.component';
 import { Error404Component } from './Error404/Error404.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,12 +11,17 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'listas/info/:id',
+    component: ListaInfoComponent,
+  },
+  {
     path: 'listas',
     component: ListaComponent,
   },
   {
-    path: '**', component: Error404Component
-  }
+    path: '**',
+    component: Error404Component,
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

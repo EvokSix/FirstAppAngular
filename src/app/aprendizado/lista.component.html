@@ -32,7 +32,9 @@
             <td>
                 <app-star [rating] = "lista.rating"></app-star>
             </td>
-            <td></td>
+            <td>
+                <a [routerLink] = "['/listas/info', lista.id]" class="btn btn-primary">Edit</a>
+            </td>
         </tr>
     </tbody>
 </table>
