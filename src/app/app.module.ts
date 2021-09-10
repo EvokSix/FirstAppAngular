@@ -1,3 +1,4 @@
+import { Error404Component } from './Error404/Error404.component';
 import { navBarComponent } from './nav-bar/nav-bar.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { StarComponent } from './star/star.component';
@@ -16,6 +17,7 @@ import {APP_BASE_HREF} from '@angular/common';
     StarComponent,
     ReplacePipe,
     navBarComponent,
+    Error404Component
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [{provide: APP_BASE_HREF, useValue: '/'}],
